@@ -5,42 +5,42 @@ import (
 	"testing"
 )
 
-func TestGenerateStraightFlush(t *testing.T) {
-	for i := 0; i < 5; i++ {
-		GenerateStraightFlush().DisplayDeck()
-	}
-}
-
-func TestGenerateFourOfAKind(t *testing.T) {
-	for i := 0; i < 5; i++ {
-		GenerateFourOfAKind().DisplayDeck()
-	}
-}
-
-func TestGenerateFullHouse(t *testing.T) {
-	for i := 0; i < 5; i++ {
-		GenerateFullHouse().DisplayDeck()
-	}
-}
-
-func TestGenerateFlush(t *testing.T) {
-	for i := 0; i < 5; i++ {
-		GenerateFlush().DisplayDeck()
-	}
-}
-
-func TestGenerateStraight(t *testing.T) {
-	for i := 0; i < 5; i++ {
-		GenerateStraight().DisplayDeck()
-	}
-}
+//func TestGenerateStraightFlush(t *testing.T) {
+//	for i := 0; i < 5; i++ {
+//		GenerateStraightFlush().DisplayDeck()
+//	}
+//}
+//
+//func TestGenerateFourOfAKind(t *testing.T) {
+//	for i := 0; i < 5; i++ {
+//		GenerateFourOfAKind().DisplayDeck()
+//	}
+//}
+//
+//func TestGenerateFullHouse(t *testing.T) {
+//	for i := 0; i < 5; i++ {
+//		GenerateFixFullHouse().DisplayDeck()
+//	}
+//}
+//
+//func TestGenerateFlush(t *testing.T) {
+//	for i := 0; i < 5; i++ {
+//		GenerateFlush().DisplayDeck()
+//	}
+//}
+//
+//func TestGenerateStraight(t *testing.T) {
+//	for i := 0; i < 5; i++ {
+//		GenerateFixSuitStraight().DisplayDeck()
+//	}
+//}
 
 func TestDeck_IsFlush(t *testing.T) {
 	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	f := GenerateFlush()
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 
 	assert.Equal(t, true, sf.IsFlush())
 	assert.Equal(t, false, fk.IsFlush())
@@ -49,13 +49,12 @@ func TestDeck_IsFlush(t *testing.T) {
 	assert.Equal(t, false, s.IsFlush())
 }
 
-// Flush 會產生同花順 有時會false暫時忽略
 func TestDeck_IsStraight(t *testing.T) {
 	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	f := GenerateFlush()
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 
 	assert.Equal(t, true, sf.IsStraight())
 	assert.Equal(t, false, fk.IsStraight())
@@ -67,9 +66,9 @@ func TestDeck_IsStraight(t *testing.T) {
 func TestDeck_IsStraightFlush(t *testing.T) {
 	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	f := GenerateFlush()
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 
 	assert.Equal(t, true, sf.IsStraightFlush())
 	assert.Equal(t, false, fk.IsStraightFlush())
@@ -81,9 +80,9 @@ func TestDeck_IsStraightFlush(t *testing.T) {
 func TestDeck_IsFourOfAKind(t *testing.T) {
 	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	f := GenerateFlush()
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 
 	assert.Equal(t, false, sf.IsFourOfAKind())
 	assert.Equal(t, true, fk.IsFourOfAKind())
@@ -99,22 +98,22 @@ func TestDeck_IsFullHouse(t *testing.T) {
 	fk := GenerateFourOfAKind()
 	assert.Equal(t, false, fk.IsFullHouse())
 
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	assert.Equal(t, true, fh.IsFullHouse())
 
 	f := GenerateFlush()
 	assert.Equal(t, false, f.IsFullHouse())
 
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 	assert.Equal(t, false, s.IsFullHouse())
 }
 
 func TestStraightFlushDeck_CompareTo(t *testing.T) {
 	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	f := GenerateFlush()
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 
 	assert.Equal(t, 0, sf.CompareTo(sf))
 	assert.Equal(t, 1, sf.CompareTo(fk))
@@ -126,9 +125,9 @@ func TestStraightFlushDeck_CompareTo(t *testing.T) {
 func TestFourOfAKindDeck_CompareTo(t *testing.T) {
 	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	f := GenerateFlush()
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 
 	assert.Equal(t, 2, fk.CompareTo(sf))
 	assert.Equal(t, 0, fk.CompareTo(fk))
@@ -140,13 +139,36 @@ func TestFourOfAKindDeck_CompareTo(t *testing.T) {
 func TestFullHousDeck_CompareTo(t *testing.T) {
 	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
-	fh := GenerateFullHouse()
+	fh := GenerateFixFullHouse()
 	f := GenerateFlush()
-	s := GenerateStraight()
+	s := GenerateFixSuitStraight()
 
 	assert.Equal(t, 2, fh.CompareTo(sf))
 	assert.Equal(t, 2, fh.CompareTo(fk))
 	assert.Equal(t, 0, fh.CompareTo(fh))
 	assert.Equal(t, 1, fh.CompareTo(f))
 	assert.Equal(t, 1, fh.CompareTo(s))
+}
+
+func TestUnmatchDeck_CompareTo(t *testing.T) {
+	sf := GenerateStraightFlush()
+	fk := GenerateFourOfAKind()
+	fh := GenerateFixFullHouse()
+	f := GenerateFlush()
+	s := GenerateFixSuitStraight()
+	unm := Deck{
+		Cards: []Card{
+			Card{0, 1},
+			Card{0, 2},
+			Card{2, 13},
+			Card{0, 5},
+			Card{0, 6},
+		},
+	}
+
+	assert.Equal(t, 2, unm.CompareTo(sf))
+	assert.Equal(t, 2, unm.CompareTo(fk))
+	assert.Equal(t, 2, unm.CompareTo(fh))
+	assert.Equal(t, 2, unm.CompareTo(f))
+	assert.Equal(t, 2, unm.CompareTo(s))
 }

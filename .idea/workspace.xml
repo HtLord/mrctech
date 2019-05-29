@@ -6,14 +6,12 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ba27d75-fddb-4ec7-8f77-3def91fed9e0" name="Default Changelist" comment="Done Task3, Task4 and add some deck type&#10;1. Done task3 and test&#10;1. Done task4 and test&#10;1. Add some deck type and test">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task5.go" afterDir="false" />
+    <list default="true" id="7ba27d75-fddb-4ec7-8f77-3def91fed9e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1.go" beforeDir="false" afterPath="$PROJECT_DIR$/task1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task2.go" beforeDir="false" afterPath="$PROJECT_DIR$/task2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task2_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/task2_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task5.go" beforeDir="false" afterPath="$PROJECT_DIR$/task5.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,17 +36,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task5.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task1_test.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#17#76#0" expanded="true" />
               </folding>
@@ -59,8 +57,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task2_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
+            <state relative-caret-position="-990">
+              <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/testing/testing.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="867" selection-start-line="867" selection-end-line="867" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/runtime/asm_amd64.s">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="1337" selection-start-line="1337" selection-end-line="1337" />
             </state>
           </provider>
         </entry>
@@ -68,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task2.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="214" column="34" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="34" />
+            <state relative-caret-position="166">
+              <caret line="361" column="19" selection-start-line="361" selection-start-column="14" selection-end-line="361" selection-end-column="19" />
               <folding>
                 <element signature="e#17#48#0" expanded="true" />
               </folding>
@@ -77,23 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task4.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-              <folding>
-                <element signature="e#17#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -101,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task4_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="233">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#17#76#0" expanded="true" />
               </folding>
@@ -115,18 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
               <caret line="306" column="5" selection-start-line="306" selection-start-column="5" selection-end-line="306" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task3_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-              <folding>
-                <element signature="e#17#76#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -146,10 +138,22 @@
       <find>assert.Equ</find>
       <find>assert.Equal(t</find>
       <find>1</find>
+      <find>displa</find>
+      <find>GenerateStraight</find>
+      <find>GenerateStraight()</find>
+      <find>GenerateFullHouse()</find>
+      <find>fullhous</find>
+      <find>straight</find>
+      <find>full</find>
+      <find>Full</find>
+      <find>displ</find>
     </findStrings>
     <replaceStrings>
       <replace>t.Log(</replace>
       <replace>2</replace>
+      <replace>GenerateFixSuitStraight</replace>
+      <replace>GenerateFixSuitStraight()</replace>
+      <replace>GenerateFixFullHouse()</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12/libexec" />
@@ -164,12 +168,12 @@
         <option value="$PROJECT_DIR$/task4.go" />
         <option value="$PROJECT_DIR$/task4_test.go" />
         <option value="$PROJECT_DIR$/README.md.go" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/task2_test.go" />
-        <option value="$PROJECT_DIR$/task2.go" />
-        <option value="$PROJECT_DIR$/task5.go" />
         <option value="$PROJECT_DIR$/task1.go" />
         <option value="$PROJECT_DIR$/task1_test.go" />
+        <option value="$PROJECT_DIR$/task2.go" />
+        <option value="$PROJECT_DIR$/task2_test.go" />
+        <option value="$PROJECT_DIR$/task5.go" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -220,18 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestDurationPeak in github.com/HtLord/assignment/mrctech">
-    <configuration name="TestDeck_IsFourOfAKind in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="mrctech" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/HtLord/assignment/mrctech" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDeck_IsFourOfAKind$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.go test github.com/HtLord/assignment/mrctech">
     <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mrctech" />
       <working_directory value="$PROJECT_DIR$" />
@@ -254,7 +247,7 @@
       <pattern value="^TestDeck_IsStraight$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestDeck_IsStraightFlush in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFullHousDeck_CompareTo in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mrctech" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -262,10 +255,10 @@
       <package value="github.com/HtLord/assignment/mrctech" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDeck_IsStraightFlush$" />
+      <pattern value="^TestFullHousDeck_CompareTo$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUnmatchDeck_CompareTo in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mrctech" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -273,61 +266,72 @@
       <package value="github.com/HtLord/assignment/mrctech" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDurationPeak$" />
+      <pattern value="^TestUnmatchDeck_CompareTo$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="mrctech" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/HtLord/assignment/mrctech" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestDurationPeak in github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.go test github.com/HtLord/assignment/mrctech" />
         <item itemvalue="Go Test.TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" />
-        <item itemvalue="Go Test.TestDeck_IsFourOfAKind in github.com/HtLord/assignment/mrctech" />
-        <item itemvalue="Go Test.TestDeck_IsStraightFlush in github.com/HtLord/assignment/mrctech" />
         <item itemvalue="Go Test.TestDeck_IsStraight in github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.TestUnmatchDeck_CompareTo in github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.TestFullHousDeck_CompareTo in github.com/HtLord/assignment/mrctech" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 15h 59m 14s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 05m 45s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 00m 44s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 06m 22s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 01m 07s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 06m 28s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 02m 23s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 10m 55s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 02m 37s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 10m 57s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 02m 55s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 11m 03s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 02m 58s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 11m 06s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 03m 05s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 11m 08s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 03m 07s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDeck_IsFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 11m 18s.xml">
+      <configuration name="TestDeck_IsFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDurationPeak_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 16h 03m 23s.xml">
-      <configuration name="TestDurationPeak in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="go_test_github_com_HtLord_assignment_mrctech - 2019.05.29 at 17h 11m 41s.xml">
+      <configuration name="go test github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23424658" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -348,7 +352,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Done Task3, Task4 and add some deck type&#10;1. Done task3 and test&#10;1. Done task4 and test&#10;1. Add some deck type and test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done Task3, Task4 and add some deck type&#10;1. Done task3 and test&#10;1. Done task4 and test&#10;1. Add some deck type and test" />
+    <MESSAGE value="Done Task1 , test, and add some in task2&#10;1. Done task1 and test&#10;1. Add some deck type generation and checker" />
+    <MESSAGE value="Done task2&#10;1. TODO: need to fix generate straight will hit straight flush causing test compare failure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done task2&#10;1. TODO: need to fix generate straight will hit straight flush causing test compare failure." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -395,51 +401,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task4_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#17#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/sort/sort.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="306" column="5" selection-start-line="306" selection-start-column="5" selection-end-line="306" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="214" column="34" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="34" />
-          <folding>
-            <element signature="e#17#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task2_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task5.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -456,10 +421,65 @@
     <entry file="file://$PROJECT_DIR$/task1_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#17#76#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task4_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#17#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/testing/testing.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="867" selection-start-line="867" selection-end-line="867" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/runtime/asm_amd64.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="1337" selection-start-line="1337" selection-end-line="1337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="361" column="19" selection-start-line="361" selection-start-column="14" selection-end-line="361" selection-end-column="19" />
+          <folding>
+            <element signature="e#17#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task2_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-990">
+          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task5.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>

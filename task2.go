@@ -86,6 +86,30 @@ func GenerateFullHouse() Deck {
 	return Deck{deck}
 }
 
+func GenerateFixFullHouse() Deck {
+	rand.Seed(time.Now().UnixNano())
+	numb := rand.Intn(13) + 1
+	numb2 := 0
+
+	for {
+		numb2 = rand.Intn(13) + 1
+		if numb2 != numb {
+			break
+		}
+	}
+
+	c1 := Card{1, numb}
+	c2 := Card{2, numb}
+	c3 := Card{3, numb}
+
+	c4 := Card{0, numb2}
+	c5 := Card{1, numb2}
+
+	var deck []Card
+	deck = append(deck, c1, c2, c3, c4, c5)
+	return Deck{deck}
+}
+
 func GenerateFlush() Deck {
 	rand.Seed(time.Now().UnixNano())
 	suit := rand.Intn(4)
@@ -116,6 +140,9 @@ func GenerateFlush() Deck {
 	return Deck{cards}
 }
 
+/*
+	TODO: Fix it. Sometimes it will generate straight flush
+*/
 func GenerateStraight() Deck {
 	rand.Seed(time.Now().UnixNano())
 	straight := rand.Intn(9) + 1
@@ -141,6 +168,25 @@ func GenerateStraight() Deck {
 
 	if straight == 10 {
 		c5 = Card{suit, 1}
+	}
+
+	var deck []Card
+	deck = append(deck, c1, c2, c3, c4, c5)
+	return Deck{deck}
+}
+
+func GenerateFixSuitStraight() Deck {
+	rand.Seed(time.Now().UnixNano())
+	straight := rand.Intn(9) + 1
+
+	c1 := Card{0, straight}
+	c2 := Card{1, straight + 1}
+	c3 := Card{2, straight + 2}
+	c4 := Card{3, straight + 3}
+	c5 := Card{0, straight + 4}
+
+	if straight == 10 {
+		c5 = Card{0, 1}
 	}
 
 	var deck []Card
@@ -215,6 +261,7 @@ func (d Deck) IsFullHouse() bool {
 	a := SortDeckToNumber(d)
 
 	numb1 := a[0]
+	maxNumb1 := a[0]
 	max := 1
 	c := 1
 	for i := 1; i < len(a); i++ {
@@ -222,6 +269,7 @@ func (d Deck) IsFullHouse() bool {
 			c++
 			if c > max {
 				max = c
+				maxNumb1 = a[i]
 			}
 		} else {
 			numb1 = a[i]
@@ -236,7 +284,7 @@ func (d Deck) IsFullHouse() bool {
 	c = 1
 	numb2 := 0
 	for _, v := range a {
-		if v == numb1 {
+		if v == maxNumb1 {
 			continue
 		} else {
 			if numb2 == v {
@@ -277,6 +325,24 @@ func (d Deck) IsStraight() bool {
 		numbs = append(numbs, card.Number)
 	}
 	sort.Ints(numbs)
+
+	numb1 := numbs[0]
+	max := 1
+	c := 1
+	for i := 1; i < len(numbs); i++ {
+		if numbs[i] == numb1 {
+			c++
+			if c > max {
+				max = c
+			}
+		} else {
+			numb1 = numbs[i]
+			c = 1
+		}
+	}
+	if max > 1 {
+		return false
+	}
 
 	sub := numbs[4] - numbs[0]
 	// Check regular straight if sub == 4, Check A, T, J, Q, K if sub ==12 && sub2 == 3
