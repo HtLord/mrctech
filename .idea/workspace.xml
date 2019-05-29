@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ba27d75-fddb-4ec7-8f77-3def91fed9e0" name="Default Changelist" comment="" />
+    <list default="true" id="7ba27d75-fddb-4ec7-8f77-3def91fed9e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/task4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task4_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2.go" beforeDir="false" afterPath="$PROJECT_DIR$/task2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/task2_test.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +25,46 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task2_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task2.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-397">
-              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+            <state relative-caret-position="324">
+              <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
               <folding>
                 <element signature="e#17#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task4.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-37">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+              <folding>
+                <element signature="e#17#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task4_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding>
+                <element signature="e#17#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,18 +84,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
               <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task2_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="e#17#59#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task3_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="263">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding>
                 <element signature="e#17#76#0" expanded="true" />
               </folding>
@@ -103,7 +130,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Deck</find>
+      <find>assert.Equ</find>
+      <find>assert.Equal(t</find>
     </findStrings>
+    <replaceStrings>
+      <replace>t.Log(</replace>
+    </replaceStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12/libexec" />
   <component name="Git.Settings">
@@ -115,15 +147,10 @@
         <option value="$PROJECT_DIR$/task1.go" />
         <option value="$PROJECT_DIR$/task3.go" />
         <option value="$PROJECT_DIR$/task3_test.go" />
+        <option value="$PROJECT_DIR$/task4.go" />
+        <option value="$PROJECT_DIR$/task4_test.go" />
         <option value="$PROJECT_DIR$/task2_test.go" />
         <option value="$PROJECT_DIR$/task2.go" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -153,6 +180,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -172,8 +200,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestRand in github.com/HtLord/assignment/mrctech">
-    <configuration name="TestFibonacci in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestGenerateFlush in github.com/HtLord/assignment/mrctech">
+    <configuration name="TestGenerateFlush in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mrctech" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -181,10 +209,10 @@
       <package value="github.com/HtLord/assignment/mrctech" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestFibonacci$" />
+      <pattern value="^TestGenerateFlush$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFibonacci2 in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGenerateFullHouse in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mrctech" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -192,10 +220,10 @@
       <package value="github.com/HtLord/assignment/mrctech" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestFibonacci2$" />
+      <pattern value="^TestGenerateFullHouse$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRand in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMiniProduct in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mrctech" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -203,43 +231,82 @@
       <package value="github.com/HtLord/assignment/mrctech" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestRand$" />
+      <pattern value="^TestMiniProduct$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestMiniProduct2 in github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="mrctech" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/HtLord/assignment/mrctech" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestMiniProduct2$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test github.com/HtLord/assignment/mrctech" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="mrctech" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/HtLord/assignment/mrctech" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestRand in github.com/HtLord/assignment/mrctech" />
-        <item itemvalue="Go Test.TestFibonacci2 in github.com/HtLord/assignment/mrctech" />
-        <item itemvalue="Go Test.TestFibonacci in github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.TestGenerateFlush in github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.TestGenerateFullHouse in github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.go test github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.TestMiniProduct2 in github.com/HtLord/assignment/mrctech" />
+        <item itemvalue="Go Test.TestMiniProduct in github.com/HtLord/assignment/mrctech" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestFibonacci_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 11h 23m 45s.xml">
-      <configuration name="TestFibonacci in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="go_test_github_com_HtLord_assignment_mrctech - 2019.05.29 at 13h 51m 22s.xml">
+      <configuration name="go test github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestFibonacci2_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 11h 25m 06s.xml">
-      <configuration name="TestFibonacci2 in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="go_test_github_com_HtLord_assignment_mrctech - 2019.05.29 at 13h 52m 07s.xml">
+      <configuration name="go test github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestRand_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 11h 39m 55s.xml">
-      <configuration name="TestRand in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="go_test_github_com_HtLord_assignment_mrctech - 2019.05.29 at 13h 53m 06s.xml">
+      <configuration name="go test github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestRand_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 11h 40m 04s.xml">
-      <configuration name="TestRand in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="go_test_github_com_HtLord_assignment_mrctech - 2019.05.29 at 13h 53m 36s.xml">
+      <configuration name="go test github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestRand_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 11h 40m 12s.xml">
-      <configuration name="TestRand in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    <history-entry file="go_test_github_com_HtLord_assignment_mrctech - 2019.05.29 at 13h 54m 27s.xml">
+      <configuration name="go test github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGenerateFullHouse_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 13h 58m 23s.xml">
+      <configuration name="TestGenerateFullHouse in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGenerateFlush_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 14h 07m 49s.xml">
+      <configuration name="TestGenerateFlush in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGenerateFlush_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 14h 08m 33s.xml">
+      <configuration name="TestGenerateFlush in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGenerateFlush_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 14h 08m 58s.xml">
+      <configuration name="TestGenerateFlush in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGenerateFlush_in_github_com_HtLord_assignment_mrctech - 2019.05.29 at 14h 09m 24s.xml">
+      <configuration name="TestGenerateFlush in github.com/HtLord/assignment/mrctech" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -247,7 +314,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -269,16 +336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task3_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="e#17#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task1.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -293,20 +350,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task2_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#17#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/builtin/builtin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task3_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#17#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task4.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#17#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task4_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#17#76#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -317,10 +394,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task2_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task2.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-397">
-          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
           <folding>
             <element signature="e#17#48#0" expanded="true" />
           </folding>
