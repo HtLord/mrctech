@@ -90,12 +90,21 @@ func GenerateFlush() Deck {
 	rand.Seed(time.Now().UnixNano())
 	suit := rand.Intn(4)
 	cards := []Card{}
+	seqTimes := 0
 	seq := 0
 	for {
 		if len(cards) == 5 {
 			break
 		}
-		if rand.Intn(1) == 0 {
+
+		if seqTimes == 4 {
+			seq += 2
+			cards = append(cards, Card{suit, seq%13 + 1})
+			break
+		}
+
+		if rand.Intn(2) == 0 {
+			seqTimes++
 			seq++
 			cards = append(cards, Card{suit, seq%13 + 1})
 		} else {
@@ -107,22 +116,37 @@ func GenerateFlush() Deck {
 	return Deck{cards}
 }
 
-//
-//func GenerateStraight() Deck{
-//	rand.Seed(time.Now().UnixNano())
-//}
-//
-//func GenerateUnmatch() Deck{
-//	rand.Seed(time.Now().UnixNano())
-//}
-//
-//func GenerateCard() Card{
-//
-//}
-//
-//func GenerateDeck() Deck{
-//
-//}
+func GenerateStraight() Deck {
+	rand.Seed(time.Now().UnixNano())
+	straight := rand.Intn(9) + 1
+	suits := map[int]int{0: 0, 1: 0, 2: 0, 3: 0}
+
+	suit := rand.Intn(4)
+	suits[suit] = suits[suit] + 1
+	c1 := Card{suit, straight}
+	suit = rand.Intn(4)
+	suits[suit] = suits[suit] + 1
+	c2 := Card{suit, straight + 1}
+	suit = rand.Intn(4)
+	suits[suit] = suits[suit] + 1
+	c3 := Card{suit, straight + 2}
+	suit = rand.Intn(4)
+	suits[suit] = suits[suit] + 1
+	c4 := Card{suit, straight + 3}
+	suit = rand.Intn(4)
+	if suits[suit] == 4 {
+		suit = (suit + 1) % 4
+	}
+	c5 := Card{suit, straight + 4}
+
+	if straight == 10 {
+		c5 = Card{suit, 1}
+	}
+
+	var deck []Card
+	deck = append(deck, c1, c2, c3, c4, c5)
+	return Deck{deck}
+}
 
 // Return suit numbers. For example, ♣♡♠♢
 func (d Deck) SuitLevel() (int, int) {
@@ -146,6 +170,81 @@ func (d Deck) SuitLevel() (int, int) {
 	}
 
 	return maxSuit, max
+}
+
+func SortDeckToNumber(d Deck) []int {
+	a := []int{}
+	for _, c := range d.Cards {
+		a = append(a, c.Number)
+	}
+	sort.Ints(a)
+	return a
+}
+
+func (d Deck) MaxNumberMatch() int {
+	numb := 0
+	max := 1
+	c := 1
+	a := SortDeckToNumber(d)
+
+	numb = a[0]
+	for i := 1; i < len(a); i++ {
+		if numb == a[i] {
+			c++
+			if c > max {
+				max = c
+			}
+		} else {
+			c = 1
+			numb = a[i]
+		}
+	}
+
+	return max
+}
+
+func (d Deck) IsFourOfAKind() bool {
+	return d.MaxNumberMatch() == 4
+}
+
+func (d Deck) IsTri() bool {
+	return d.MaxNumberMatch() == 3
+}
+
+func (d Deck) IsFullHouse() bool {
+	a := SortDeckToNumber(d)
+	n := -1
+	change := 0
+	for _, v := range a {
+		if n < 0 {
+			n = v
+		}
+
+		if n != v {
+			change++
+			n = v
+		}
+	}
+
+	return change == 2 && !d.IsFourOfAKind()
+}
+
+func (d Deck) IsStraightFlush() bool {
+	return d.IsStraight() && d.IsFlush()
+}
+
+func (d Deck) IsFlush() bool {
+	suit := -1
+	for _, card := range d.Cards {
+		if suit >= 0 {
+			if suit != card.Suit {
+				return false
+			}
+		} else {
+			suit = card.Suit
+		}
+	}
+	return true
 }
 
 func (d Deck) IsStraight() bool {
@@ -178,7 +277,7 @@ func (d Deck) DisplayDeck() {
 	fmt.Print("\n")
 }
 
+// return 0 = equal; 1 = d1 bigger; 2 = d1 smaller
 func (d Deck) CompareTo(d2 Deck) int {
-
 	return 0
 }
