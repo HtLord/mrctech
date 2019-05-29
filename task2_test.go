@@ -94,20 +94,59 @@ func TestDeck_IsFourOfAKind(t *testing.T) {
 
 func TestDeck_IsFullHouse(t *testing.T) {
 	sf := GenerateStraightFlush()
+	assert.Equal(t, false, sf.IsFullHouse())
+
+	fk := GenerateFourOfAKind()
+	assert.Equal(t, false, fk.IsFullHouse())
+
+	fh := GenerateFullHouse()
+	assert.Equal(t, true, fh.IsFullHouse())
+
+	f := GenerateFlush()
+	assert.Equal(t, false, f.IsFullHouse())
+
+	s := GenerateStraight()
+	assert.Equal(t, false, s.IsFullHouse())
+}
+
+func TestStraightFlushDeck_CompareTo(t *testing.T) {
+	sf := GenerateStraightFlush()
 	fk := GenerateFourOfAKind()
 	fh := GenerateFullHouse()
 	f := GenerateFlush()
 	s := GenerateStraight()
 
-	assert.Equal(t, false, sf.IsFullHouse())
-	assert.Equal(t, false, fk.IsFullHouse())
-	assert.Equal(t, true, fh.IsFullHouse())
-	assert.Equal(t, false, f.IsFullHouse())
-	assert.Equal(t, false, s.IsFullHouse())
+	assert.Equal(t, 0, sf.CompareTo(sf))
+	assert.Equal(t, 1, sf.CompareTo(fk))
+	assert.Equal(t, 1, sf.CompareTo(fh))
+	assert.Equal(t, 1, sf.CompareTo(f))
+	assert.Equal(t, 1, sf.CompareTo(s))
 }
 
-func TestDeck_CompareTo(t *testing.T) {
-	d1 := GenerateStraightFlush()
-	d2 := GenerateStraightFlush()
-	assert.Equal(t, 0, d1.CompareTo(d2))
+func TestFourOfAKindDeck_CompareTo(t *testing.T) {
+	sf := GenerateStraightFlush()
+	fk := GenerateFourOfAKind()
+	fh := GenerateFullHouse()
+	f := GenerateFlush()
+	s := GenerateStraight()
+
+	assert.Equal(t, 2, fk.CompareTo(sf))
+	assert.Equal(t, 0, fk.CompareTo(fk))
+	assert.Equal(t, 1, fk.CompareTo(fh))
+	assert.Equal(t, 1, fk.CompareTo(f))
+	assert.Equal(t, 1, fk.CompareTo(s))
+}
+
+func TestFullHousDeck_CompareTo(t *testing.T) {
+	sf := GenerateStraightFlush()
+	fk := GenerateFourOfAKind()
+	fh := GenerateFullHouse()
+	f := GenerateFlush()
+	s := GenerateStraight()
+
+	assert.Equal(t, 2, fh.CompareTo(sf))
+	assert.Equal(t, 2, fh.CompareTo(fk))
+	assert.Equal(t, 0, fh.CompareTo(fh))
+	assert.Equal(t, 1, fh.CompareTo(f))
+	assert.Equal(t, 1, fh.CompareTo(s))
 }

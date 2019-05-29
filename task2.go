@@ -213,20 +213,44 @@ func (d Deck) IsTri() bool {
 
 func (d Deck) IsFullHouse() bool {
 	a := SortDeckToNumber(d)
-	n := -1
-	change := 0
-	for _, v := range a {
-		if n < 0 {
-			n = v
-		}
 
-		if n != v {
-			change++
-			n = v
+	numb1 := a[0]
+	max := 1
+	c := 1
+	for i := 1; i < len(a); i++ {
+		if a[i] == numb1 {
+			c++
+			if c > max {
+				max = c
+			}
+		} else {
+			numb1 = a[i]
+			c = 1
 		}
 	}
 
-	return change == 2 && !d.IsFourOfAKind()
+	if max != 3 {
+		return false
+	}
+
+	c = 1
+	numb2 := 0
+	for _, v := range a {
+		if v == numb1 {
+			continue
+		} else {
+			if numb2 == v {
+				c++
+			} else {
+				numb2 = v
+			}
+		}
+	}
+	if c != 2 {
+		return false
+	}
+
+	return true
 }
 
 func (d Deck) IsStraightFlush() bool {
@@ -279,5 +303,50 @@ func (d Deck) DisplayDeck() {
 
 // return 0 = equal; 1 = d1 bigger; 2 = d1 smaller
 func (d Deck) CompareTo(d2 Deck) int {
+	dsf := d.IsStraightFlush()
+	d2sf := d2.IsStraightFlush()
+	if dsf && !d2sf {
+		return 1
+	}
+	if !dsf && d2sf {
+		return 2
+	}
+
+	dsf = d.IsFourOfAKind()
+	d2sf = d2.IsFourOfAKind()
+	if dsf && !d2sf {
+		return 1
+	}
+	if !dsf && d2sf {
+		return 2
+	}
+
+	dsf = d.IsFullHouse()
+	d2sf = d2.IsFullHouse()
+	if dsf && !d2sf {
+		return 1
+	}
+	if !dsf && d2sf {
+		return 2
+	}
+
+	dsf = d.IsFlush()
+	d2sf = d2.IsFlush()
+	if dsf && !d2sf {
+		return 1
+	}
+	if !dsf && d2sf {
+		return 2
+	}
+
+	dsf = d.IsStraight()
+	d2sf = d2.IsStraight()
+	if dsf && !d2sf {
+		return 1
+	}
+	if !dsf && d2sf {
+		return 2
+	}
+
 	return 0
 }
